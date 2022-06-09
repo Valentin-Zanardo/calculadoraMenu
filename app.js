@@ -1,6 +1,7 @@
 //CALCULADORAS 
 let calculadoraElegida = Number(prompt("Ingrese el número de la calculadora que sea usar: \n1 -Para calculadora matemática \n2 -Para calculadora de iva \n3 -Para calculadora de Proteinas y Grasas Saludables \n4 -Para salir de las calculadoras "))
 
+
 while (calculadoraElegida != 4) {
 
     switch (calculadoraElegida) {
@@ -46,6 +47,7 @@ while (calculadoraElegida != 4) {
                 let precioFinal = iva(valorIva) + valorIva;
 
                 alert("El IVA de su producto es de " + iva(valorIva) + "$. \nEl precio final de su producto es de " + precioFinal + "$");
+                bienvidaIva = prompt("Bienvenido a la calculadora de IVA! Escriba ENT para entrar o ESC para salir");
             }
             break;
             /* FIN DE CALCULADORA DE IVA */
